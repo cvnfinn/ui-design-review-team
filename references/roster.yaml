@@ -1,0 +1,32 @@
+version: 1
+
+# level -> model: senior/observer = fable (Fable 5.1), junior = opus (Opus 5.5)
+members:
+  # Senior — Fable 5.1
+  design-director:        { title: Design Director,                 level: senior,   model: fable }
+  principal-product-designer: { title: Principal Product Designer,  level: senior,   model: fable }
+  ux-research-lead:       { title: UX Research Lead,                level: senior,   model: fable }
+  interaction-lead:       { title: Interaction Design Lead,         level: senior,   model: fable }
+  visual-design-lead:     { title: Visual Design Lead,              level: senior,   model: fable }
+  design-systems-lead:    { title: Design Systems Lead,             level: senior,   model: fable }
+  accessibility-lead:     { title: Accessibility Lead,              level: senior,   model: fable }
+  content-design-lead:    { title: Content Design Lead,             level: senior,   model: fable }
+  design-technologist:    { title: Staff Design Technologist,       level: senior,   model: fable }
+  product-manager:        { title: Senior Product Manager,          level: senior,   model: fable }
+
+  # Junior — Opus 5.5
+  product-designer:       { title: Product Designer,                level: junior,   model: opus }
+  ui-designer:            { title: UI Designer,                     level: junior,   model: opus }
+  ux-researcher:          { title: UX Researcher,                   level: junior,   model: opus }
+  motion-designer:        { title: Motion Designer,                 level: junior,   model: opus }
+  frontend-dev:           { title: Frontend Developer,              level: junior,   model: opus }
+  accessibility-tester:   { title: Accessibility Tester,            level: junior,   model: opus }
+  ux-writer:              { title: UX Writer,                       level: junior,   model: opus }
+  product-analyst:        { title: Product Analyst,                 level: junior,   model: opus }
+  responsive-designer:    { title: Responsive & Mobile Designer,    level: junior,   model: opus }
+  visual-qa:              { title: Visual QA Specialist,            level: junior,   model: opus }
+
+  # Isolated reviewer — Fable 5.1, never sees the rounds
+  first-time-user:        { title: First-Time User,                 level: observer, model: fable }
+
+always_included: [design-director, first-time-user]
